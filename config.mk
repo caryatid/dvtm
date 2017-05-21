@@ -7,7 +7,7 @@ MANPREFIX = ${PREFIX}/share/man
 TERMINFO := ${DESTDIR}${PREFIX}/share/terminfo
 
 INCS = -I.
-LIBS = -lc -lutil -lcurses -lterminfo
+LIBS = -lc -lutil -lncursesw -lterminfo
 CPPFLAGS = -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -D_XOPEN_SOURCE_EXTENDED
 CFLAGS += -std=c99 ${INCS} -DNDEBUG ${CPPFLAGS}
 
